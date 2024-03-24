@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#courses" onclick="toggleMenu()">Courses</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Ankit Patil profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ankit Yashwant Patil</h1>
+        <p class="section__text__p2">Software Developer</p>        
+        <h3 class="location">Binghamton, NY</h3>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ankit-patil-mscs/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ankitpatil3003'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <!-- <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Entry-Level <br />Software Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              /> -->
+              <h3>Education</h3>
+              <br>
+              <p>
+                <b>Master of Science in Computer Science Degree at SUNY - Binghamton University, Binghamton, NY, USA</b><br />
+                <b>Bachelor of Engineering in Computer Engineering Degree at Savitribai Phule Pune University, Pune, MH, India</b>
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              As a <b>Masters student in Computer Science</b> at <b>SUNY - Binghamton University</b>, I am passionate about developing innovative 
+              solutions for the companies. I have over two years of experience in python as well as C++ programming. 
+              I have also published a major undergraduate project on image captioning in real time, using pre-trained 
+              CNN, LSTM, and Xception models. My goal is to apply my technical and creative abilities to solve real-world 
+              problems and create positive impact.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="courses">
+      <p class="section__text__p1">My Relevent</p>
+      <h1 class="title">Courses</h1>
+      <div class="courses-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="courses-sub-title">Binghamton University</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Computer Architecture and Organization</h3>
+                  <p>CS520</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Operation Systems</h3>
+                  <p>CS550</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Design & Analysis Computer Algorithm</h3>
+                  <p>CS575</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Programming Languages</h3>
+                  <p>CS571</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Intro to Cloud Computing</h3>
+                  <p>CS552</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Design Patterns</h3>
+                  <p>CS542</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Social Media Data Science Pipeline</h3>
+                  <p>CS515</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Intro to Computer Security</h3>
+                  <p>CS558</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SW & Project Management</h3>
+                  <p>CS580B</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/book-icon.png"
+                  alt="Book icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Systems Programming</h3>
+                  <p>CS551</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pickup Box</h2>
+            <!-- <style>
+              p {
+                  text-align: justify;
+              }
+            </style>
+            <p class="description"> This Project had a time constraint of 24 hours in Hackathon Competition (HACKBU) conducted in Binghamton University 
+              on 01/16/2024 to 01/17/2024
+              In this Project, Users can explore an interactive map to locate nearby streets and potential giveaway spots. The map is integrated with the 
+              KivyMD library, providing a smooth and user-friendly interface for navigation.
+              They can mark specific locations on the map where they find free giveaway products categoring into two main types, "Decor" and 
+              "Electronics," help users filter and find specific types of free items.</p> -->
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ankitpatil3003/PickupBox.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Analyzing Political Trends on Social Media</h2>
+            <!-- <style>
+              p {
+                  text-align: justify;
+              }
+            </style>
+            <p class="description"> Conducted in-depth analysis of social media trends using data analytics and sentiment analysis, revealing prevalent 
+              political currents and public sentiments in the digital age. 
+              Applied data-driven techniques to identify patterns, trends, and sentiments on platforms such as Reddit and 4Chan, offering insights into 
+              diverse perspectives, political affiliations, and emotional dynamics in contemporary political engagement. 
+              Investigated and addressed the prevalence, origins, and impact of hate speech and online abuse in the online political landscape, developing 
+              strategies to mitigate harm and contributing to a nuanced understanding of digitally connected political discourse.</p> -->
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ankitpatil3003/Analyzing-Political-Trends-on-Social-Media.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Home Automation through IOT using Cloud Services</h2>
+            <!-- <style>
+              p {
+                  text-align: justify;
+              }
+            </style>
+            <p class="description"> The Remote Light Bulb Automation System is a project designed to enable the remote control of light bulbs using a 
+              Microcontroller (Arduino UNO) and a web-based application hosted on Google App Engine. The system aims to provide a cost-effective, reliable, 
+              and scalable solution for automating tasks that involve physical or monotonous work.</p> -->
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ankitpatil3003/Home-Automation-through-IOT-using-cloud-servies-.git'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        <!-- </div>
+        <div class="experience-details-container"> -->
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-4.png"
+                  alt="Project 4"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Image Captioning in Real Time</h2>
+              <!-- <style>
+                p {
+                    text-align: justify;
+                }
+              </style>
+              <p class="description"> Developed a major senior year capstone project on 'Image Captioning in Real Time' along with my three classmates. 
+                The idea was to develop a python-based program where images get captioned with the help of training Flicker8k Dataset using pre-trained 
+                CNN, LSTM and Xception Model.</p> -->
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ankitpatil3003/Image-Processing.git'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-5.png"
+                  alt="Project 4"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Tuition Management System</h2>
+              <!-- <style>
+                p {
+                    text-align: justify;
+                }
+              </style>
+              <p class="description"> Won the 3rd prize for developing a web application, 'Tuition Management System' in a group of five.
+                Description - A site for an administrator where he/she will manage the data of their branches, teachers, and students of the tuition class. 
+                Languages used - HTML, CSS, and JS as the frontend and PHP and MySQL as the backend.</p> -->
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/ankitpatil3003/Tuition_Management_System.git'"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:ankitpatil3003@gmail.com">ankitpatil3003@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ankit-patil-mscs/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Ankit Patil. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
