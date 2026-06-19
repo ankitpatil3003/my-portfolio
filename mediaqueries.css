@@ -10,6 +10,9 @@
   #projects {
     height: fit-content;
   }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -44,6 +47,18 @@
   }
   .about-containers {
     margin-top: 0;
+  }
+  .work-card-header {
+    flex-direction: column;
+  }
+  .work-meta {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -99,5 +114,12 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .project-filters {
+    gap: 0.5rem;
+  }
+  .filter-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 1rem;
   }
 }

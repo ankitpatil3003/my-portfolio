@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Ankit Patil | AI Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Portfolio</div>
+      <div class="logo">Ankit Patil</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#courses">Courses</a></li>
+          <li><a href="#work-experience">Work</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#courses">Courses</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Portfolio</div>
+      <div class="logo">Ankit Patil</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -31,22 +32,25 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#courses" onclick="toggleMenu()">Courses</a></li>
+          <li><a href="#work-experience" onclick="toggleMenu()">Work</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#courses" onclick="toggleMenu()">Courses</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
+
+    <!-- HERO / PROFILE -->
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="Ankit Patil profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Ankit Yashwant Patil</h1>
-        <p class="section__text__p2">Software Developer</p>        
-        <h3 class="location">Binghamton, NY</h3>
+        <h1 class="title">Ankit Patil</h1>
+        <p class="section__text__p2">AI Engineer</p>
+        <h3 class="location">New York City, NY</h3>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -74,6 +78,8 @@
         </div>
       </div>
     </section>
+
+    <!-- ABOUT -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -81,38 +87,105 @@
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
-              <!-- <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Entry-Level <br />Software Development</p>
+              <h3>Professional Summary</h3>
+              <br />
+              <p>
+                AI Engineer with 2+ years shipping governed agentic systems and multi-tenant retrieval platforms on AWS &mdash; from vector search and knowledge graph pipelines to responsible AI guardrails with cryptographic audit trails. Built and deployed human-in-the-loop LLM orchestration serving live financial workflows, with hands-on depth in evaluation frameworks (RAGAS), inference cost optimization, and production observability.
+              </p>
+              <br />
+              <p><b>Core Stack:</b> Python &middot; LangGraph &middot; FastAPI &middot; pgvector &middot; Neo4j &middot; AWS ECS Fargate</p>
+            </div>
+          </div>
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <br />
+              <p>
+                <b>M.S. Computer Science</b> &mdash; SUNY Binghamton University, NY (Jan 2023 &ndash; May 2025)<br />
+                <b>B.E. Computer Engineering</b> &mdash; Savitribai Phule Pune University, India (Aug 2018 &ndash; May 2022)
+              </p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              /> -->
-              <h3>Education</h3>
-              <br>
+              <img src="./assets/experience.png" alt="Certification icon" class="icon" />
+              <h3>Certifications</h3>
+              <br />
               <p>
-                <b>Master of Science in Computer Science Degree at SUNY - Binghamton University, Binghamton, NY, USA</b><br />
-                <b>Bachelor of Engineering in Computer Engineering Degree at Savitribai Phule Pune University, Pune, MH, India</b>
+                NVIDIA Generative AI &mdash; Associate & Professional<br />
+                NVIDIA Agentic AI &mdash; Professional
               </p>
             </div>
           </div>
-          <div class="text-container">
-            <p>
-              As a <b>Masters student in Computer Science</b> at <b>SUNY - Binghamton University</b>, I am passionate about developing innovative 
-              solutions for the companies. I have over two years of experience in python as well as C++ programming. 
-              I have also published a major undergraduate project on image captioning in real time, using pre-trained 
-              CNN, LSTM, and Xception models. My goal is to apply my technical and creative abilities to solve real-world 
-              problems and create positive impact.
-            </p>
-          </div>
         </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#work-experience'"
+      />
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section id="work-experience">
+      <p class="section__text__p1">My Professional</p>
+      <h1 class="title">Work Experience</h1>
+      <div class="work-timeline">
+
+        <div class="work-card">
+          <div class="work-card-header">
+            <div>
+              <h2 class="work-company">Invisia AI</h2>
+              <h3 class="work-role">AI Engineer</h3>
+            </div>
+            <div class="work-meta">
+              <span class="work-location">New York, NY</span>
+              <span class="work-dates">Oct 2025 &ndash; Jun 2026</span>
+            </div>
+          </div>
+          <ul class="work-bullets">
+            <li>Engineered a tenant-isolated vector search and ingestion pipeline using pgvector and Python, processing 50 MB+ financial documents per tenant with strict namespace partitioning</li>
+            <li>Accelerated investor reporting cycles by 40% by orchestrating a human-in-the-loop agentic workflow using LangGraph and GPT-4o with structured token budgeting</li>
+            <li>Built ToneGuard, a responsible AI guardrail enforcing citation-grounded faithfulness checks and content suppression with cryptographically immutable audit trails</li>
+            <li>Deployed governed agentic microservices behind RBAC-enforced APIs on AWS ECS Fargate with Docker and GitHub Actions CI/CD</li>
+          </ul>
+        </div>
+
+        <div class="work-card">
+          <div class="work-card-header">
+            <div>
+              <h2 class="work-company">G5InfoTech</h2>
+              <h3 class="work-role">AI Intern</h3>
+            </div>
+            <div class="work-meta">
+              <span class="work-location">Remote, USA</span>
+              <span class="work-dates">Jan 2025 &ndash; Oct 2025</span>
+            </div>
+          </div>
+          <ul class="work-bullets">
+            <li>Built a multi-turn conversational AI system using LangGraph with hybrid dense/sparse retrieval & cross-encoder reranking, benchmarked at 0.87 faithfulness via RAGAS</li>
+            <li>Reduced domain-specific hallucinations 3x by deploying locally-hosted Ollama models with structured prompting and persistent memory</li>
+            <li>Constructed entity-extraction & knowledge graph pipelines using Neo4j & LLM-guided traversal, improving multi-hop answer accuracy by 35%</li>
+          </ul>
+        </div>
+
+        <div class="work-card">
+          <div class="work-card-header">
+            <div>
+              <h2 class="work-company">SafeSpace</h2>
+              <h3 class="work-role">Software Engineering Intern</h3>
+            </div>
+            <div class="work-meta">
+              <span class="work-location">Remote, USA</span>
+              <span class="work-dates">Aug 2024 &ndash; Dec 2024</span>
+            </div>
+          </div>
+          <ul class="work-bullets">
+            <li>Shipped backend features and automated test suites using FastAPI and pytest, reducing post-deployment bugs by 20%</li>
+            <li>Architected REST and server-sent event streaming APIs integrated with a Next.js frontend for real-time system state updates</li>
+          </ul>
+        </div>
+
       </div>
       <img
         src="./assets/arrow.png"
@@ -121,164 +194,141 @@
         onclick="location.href='./#experience'"
       />
     </section>
+
+    <!-- SKILLS -->
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+
           <div class="details-container">
-            <h2 class="experience-sub-title">Languages</h2>
+            <h2 class="experience-sub-title">Languages & Databases</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Python</h3><p>Expert</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>SQL</h3><p>Experienced</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>TypeScript</h3><p>Intermediate</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>FastAPI</h3><p>Experienced</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>python</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>React.js</h3><p>Intermediate</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>PostgreSQL</h3><p>Experienced</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>MongoDB</h3><p>Intermediate</p></div>
               </article>
             </div>
           </div>
+
           <div class="details-container">
-            <h2 class="experience-sub-title">Languages</h2>
+            <h2 class="experience-sub-title">AI & Agents</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>LangGraph</h3><p>Experienced</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React JS</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>LangChain</h3><p>Experienced</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>LlamaIndex</h3><p>Intermediate</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Basic</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>MCP Servers</h3><p>Experienced</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Prompt Engineering</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Structured Outputs</h3><p>Experienced</p></div>
               </article>
             </div>
           </div>
+
+        </div>
+        <div class="about-containers">
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Retrieval & Evaluation</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>pgvector</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Neo4j</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>FAISS</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Graph RAG</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>RAGAS</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Langfuse</h3><p>Intermediate</p></div>
+              </article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud & Infrastructure</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>AWS</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Docker</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Kubernetes</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Terraform</h3><p>Intermediate</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>GitHub Actions</h3><p>Experienced</p></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+                <div><h3>Azure</h3><p>Intermediate</p></div>
+              </article>
+            </div>
+          </div>
+
         </div>
       </div>
       <img
@@ -288,8 +338,246 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Projects</h1>
+
+      <!-- Filter buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai">AI / Agents</button>
+        <button class="filter-btn" data-filter="web">Web / Full-Stack</button>
+        <button class="filter-btn" data-filter="systems">Systems</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Incident Zero -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">Incident Zero</h2>
+          <p class="project-tech">FastAPI &middot; Next.js &middot; Mistral &middot; MCP &middot; OCR &middot; SSE</p>
+          <p class="project-desc">Multimodal agentic security platform that accepts images, PDFs, and text evidence, runs OCR extraction and LLM-driven attack-graph generation, and outputs structured root-cause analysis.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003'">Github</button>
+          </div>
+        </div>
+
+        <!-- WanderGenie -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">WanderGenie</h2>
+          <p class="project-tech">LangGraph &middot; AWS Bedrock &middot; GPT-4o-mini &middot; pgvector &middot; Neo4j</p>
+          <p class="project-desc">Multi-agent AI travel planner with three specialized LangGraph agents coordinating through a shared state graph. Hybrid retrieval improved route accuracy by 40% over dense-only baselines.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003'">Github</button>
+          </div>
+        </div>
+
+        <!-- AI Document Chat SaaS -->
+        <div class="details-container color-container project-card" data-category="ai web">
+          <h2 class="experience-sub-title project-title">AI Document Chat SaaS</h2>
+          <p class="project-tech">TypeScript &middot; Next.js &middot; AI &middot; SaaS</p>
+          <p class="project-desc">Full-stack SaaS application enabling users to upload documents and chat with them using AI-powered retrieval and generation.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/AI-Document-Chat-Saas-Application'">Github</button>
+            <button class="btn btn-color-1 project-btn" onclick="window.open('https://ai-document-chat-saas-application.onrender.com/')">Live Demo</button>
+          </div>
+          <a class="demo-video-link" href="https://drive.google.com/file/d/1DbPZKWdWIhHCY8DYtq8XGEDi8sCmpiiM/view?usp=sharing" target="_blank">Watch Demo Video</a>
+        </div>
+
+        <!-- Agentic AI DevOps Automation -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">Agentic AI DevOps Automation</h2>
+          <p class="project-tech">Python &middot; FastAPI &middot; ServiceNow &middot; Agentic AI</p>
+          <p class="project-desc">Agentic AI system as a FastAPI microservice integrated with ServiceNow PDI. Processes free-form IT requests, determines required agents, and returns comprehensive combined results.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Agentic-AI-DevOps-Automation-Project'">Github</button>
+          </div>
+        </div>
+
+        <!-- Stock Agent AI Assistant -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">Stock Agent AI Assistant</h2>
+          <p class="project-tech">Python &middot; RAG &middot; yfinance &middot; Agentic AI</p>
+          <p class="project-desc">Agentic system combining RAG with yfinance data to provide strategy improvement suggestions and stock screening.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Stock-Agent-AI-Assistant'">Github</button>
+          </div>
+        </div>
+
+        <!-- End-to-End Software Life Cycle Model -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">E2E Software Life Cycle Agentic AI</h2>
+          <p class="project-tech">Jupyter Notebook &middot; Agentic AI</p>
+          <p class="project-desc">End-to-end software life cycle model powered by agentic AI, automating stages from requirements to deployment.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/End-to-End-Software-Life-Cycle-Model-Agentic-AI-Project'">Github</button>
+          </div>
+        </div>
+
+        <!-- Trip Planner Using Crew AI -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">Trip Planner (CrewAI)</h2>
+          <p class="project-tech">CrewAI &middot; Python &middot; Multi-Agent</p>
+          <p class="project-desc">AI-powered trip planner built with CrewAI framework using multi-agent collaboration for itinerary generation.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Trip-Planner-Using-Crew-AI'">Github</button>
+          </div>
+        </div>
+
+        <!-- Content Researcher Writer -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">Content Researcher & Writer</h2>
+          <p class="project-tech">CrewAI &middot; Jupyter Notebook &middot; Multi-Agent</p>
+          <p class="project-desc">Multi-agent content research and writing system using CrewAI for automated content generation workflows.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Content-Reseracher-Writer-Using-CrewAI'">Github</button>
+          </div>
+        </div>
+
+        <!-- Traditional RAG -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">Traditional RAG</h2>
+          <p class="project-tech">Jupyter Notebook &middot; RAG &middot; Vector Search</p>
+          <p class="project-desc">Implementation of a traditional Retrieval-Augmented Generation pipeline with vector search and document Q&A.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Traditional-RAG'">Github</button>
+          </div>
+        </div>
+
+        <!-- Basic AI Chatbot -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">AI Chatbot (LangGraph)</h2>
+          <p class="project-tech">Python &middot; LangGraph</p>
+          <p class="project-desc">Basic AI chatbot built using LangGraph for stateful, graph-based conversation management.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Basic-AI-Chatbot-using-Langgraph'">Github</button>
+          </div>
+        </div>
+
+        <!-- Text Summarizer -->
+        <div class="details-container color-container project-card" data-category="web ai">
+          <h2 class="experience-sub-title project-title">Text Summarizer</h2>
+          <p class="project-tech">HTML &middot; CSS &middot; JavaScript &middot; NLP</p>
+          <p class="project-desc">Web-based text summarization tool with a clean UI for condensing long-form content.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Text-Summarizer-Project'">Github</button>
+          </div>
+        </div>
+
+        <!-- Student Score Prediction -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">Student Score Prediction</h2>
+          <p class="project-tech">Jupyter Notebook &middot; ML &middot; Scikit-learn</p>
+          <p class="project-desc">Machine learning project for predicting student scores using regression models and data analysis.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Student-Score-Prediction'">Github</button>
+          </div>
+        </div>
+
+        <!-- Codecrafters BitTorrent -->
+        <div class="details-container color-container project-card" data-category="systems">
+          <h2 class="experience-sub-title project-title">BitTorrent Client (Python)</h2>
+          <p class="project-tech">Python &middot; Networking &middot; BitTorrent Protocol</p>
+          <p class="project-desc">Python implementation of a BitTorrent client, built as part of the Codecrafters challenge.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/codecrafters-bittorrent-python'">Github</button>
+          </div>
+        </div>
+
+        <!-- Multi-Threaded Rainbow Table -->
+        <div class="details-container color-container project-card" data-category="systems">
+          <h2 class="experience-sub-title project-title">Rainbow Table Server</h2>
+          <p class="project-tech">C &middot; Multi-Threading &middot; Cryptography</p>
+          <p class="project-desc">Multi-threaded rainbow table server for password recovery using concurrent hash table lookups.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Multi-Threaded-Rainbow-Table-Server-for-Password-Recovery'">Github</button>
+          </div>
+        </div>
+
+        <!-- APEX Pipeline Simulator -->
+        <div class="details-container color-container project-card" data-category="systems">
+          <h2 class="experience-sub-title project-title">APEX 5-Stage Pipeline Simulator</h2>
+          <p class="project-tech">C &middot; Computer Architecture</p>
+          <p class="project-desc">Simulator for a 5-stage in-order pipeline processor with hazard detection and forwarding.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/APEX-5-stage-in-order-Pipeline-Simulator'">Github</button>
+          </div>
+        </div>
+
+        <!-- TLB Simulator -->
+        <div class="details-container color-container project-card" data-category="systems">
+          <h2 class="experience-sub-title project-title">TLB Simulator</h2>
+          <p class="project-tech">C &middot; Operating Systems &middot; Memory Management</p>
+          <p class="project-desc">TLB simulator with multiple replacement algorithms (LRU, FIFO, Random) for virtual memory management.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/TLB-Simulator-with-Replacement-Algorithms'">Github</button>
+          </div>
+        </div>
+
+        <!-- Design Patterns -->
+        <div class="details-container color-container project-card" data-category="systems">
+          <h2 class="experience-sub-title project-title">Design Patterns</h2>
+          <p class="project-tech">Java &middot; OOP &middot; Design Patterns</p>
+          <p class="project-desc">Implementations of common software design patterns in Java with practical examples.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Design-Patterns'">Github</button>
+          </div>
+        </div>
+
+        <!-- Analyzing Political Trends -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">Political Trends Analysis</h2>
+          <p class="project-tech">Python &middot; NLP &middot; Sentiment Analysis</p>
+          <p class="project-desc">Data analytics and sentiment analysis on social media trends, revealing political currents and public sentiments across platforms like Reddit and 4Chan.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Analyzing-Political-Trends-on-Social-Media'">Github</button>
+          </div>
+        </div>
+
+        <!-- Image Captioning -->
+        <div class="details-container color-container project-card" data-category="ai">
+          <h2 class="experience-sub-title project-title">Image Captioning in Real Time</h2>
+          <p class="project-tech">Python &middot; CNN &middot; LSTM &middot; Xception</p>
+          <p class="project-desc">Real-time image captioning using pre-trained CNN, LSTM, and Xception models trained on Flickr8k dataset. Published as undergraduate capstone project.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Image-Processing'">Github</button>
+          </div>
+        </div>
+
+        <!-- PickupBox -->
+        <div class="details-container color-container project-card" data-category="web">
+          <h2 class="experience-sub-title project-title">PickupBox</h2>
+          <p class="project-tech">Python &middot; KivyMD &middot; Maps API</p>
+          <p class="project-desc">Interactive map app for locating nearby free giveaway items, built in 24 hours at BinghamtonHacks (HACKBU) hackathon.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/PickupBox'">Github</button>
+          </div>
+        </div>
+
+        <!-- Tuition Management System -->
+        <div class="details-container color-container project-card" data-category="web">
+          <h2 class="experience-sub-title project-title">Tuition Management System</h2>
+          <p class="project-tech">PHP &middot; MySQL &middot; HTML &middot; CSS &middot; JS</p>
+          <p class="project-desc">Web application for managing branches, teachers, and students of a tuition class. Won 3rd prize in competition.</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ankitpatil3003/Tuition_Management_System'">Github</button>
+          </div>
+        </div>
+
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#courses'"
+      />
+    </section>
+
+    <!-- COURSES -->
     <section id="courses">
-      <p class="section__text__p1">My Relevent</p>
+      <p class="section__text__p1">My Relevant</p>
       <h1 class="title">Courses</h1>
       <div class="courses-details-container">
         <div class="about-containers">
@@ -297,271 +585,48 @@
             <h2 class="courses-sub-title">Binghamton University</h2>
             <div class="article-container">
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Computer Architecture and Organization</h3>
-                  <p>CS520</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>Computer Architecture and Organization</h3><p>CS520</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Operation Systems</h3>
-                  <p>CS550</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>Operating Systems</h3><p>CS550</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Design & Analysis Computer Algorithm</h3>
-                  <p>CS575</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>Design & Analysis Computer Algorithm</h3><p>CS575</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Programming Languages</h3>
-                  <p>CS571</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>Programming Languages</h3><p>CS571</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Intro to Cloud Computing</h3>
-                  <p>CS552</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>Intro to Cloud Computing</h3><p>CS552</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Design Patterns</h3>
-                  <p>CS542</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>Design Patterns</h3><p>CS542</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Social Media Data Science Pipeline</h3>
-                  <p>CS515</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>Social Media Data Science Pipeline</h3><p>CS515</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Intro to Computer Security</h3>
-                  <p>CS558</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>Intro to Computer Security</h3><p>CS558</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SW & Project Management</h3>
-                  <p>CS580B</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>SW & Project Management</h3><p>CS580B</p></div>
               </article>
               <article>
-                <img
-                  src="./assets/book-icon.png"
-                  alt="Book icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Systems Programming</h3>
-                  <p>CS551</p>
-                </div>
+                <img src="./assets/book-icon.png" alt="Book icon" class="icon" />
+                <div><h3>Systems Programming</h3><p>CS551</p></div>
               </article>
             </div>
           </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Pickup Box</h2>
-            <!-- <style>
-              p {
-                  text-align: justify;
-              }
-            </style>
-            <p class="description"> This Project had a time constraint of 24 hours in Hackathon Competition (HACKBU) conducted in Binghamton University 
-              on 01/16/2024 to 01/17/2024
-              In this Project, Users can explore an interactive map to locate nearby streets and potential giveaway spots. The map is integrated with the 
-              KivyMD library, providing a smooth and user-friendly interface for navigation.
-              They can mark specific locations on the map where they find free giveaway products categoring into two main types, "Decor" and 
-              "Electronics," help users filter and find specific types of free items.</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ankitpatil3003/PickupBox.git'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Analyzing Political Trends on Social Media</h2>
-            <!-- <style>
-              p {
-                  text-align: justify;
-              }
-            </style>
-            <p class="description"> Conducted in-depth analysis of social media trends using data analytics and sentiment analysis, revealing prevalent 
-              political currents and public sentiments in the digital age. 
-              Applied data-driven techniques to identify patterns, trends, and sentiments on platforms such as Reddit and 4Chan, offering insights into 
-              diverse perspectives, political affiliations, and emotional dynamics in contemporary political engagement. 
-              Investigated and addressed the prevalence, origins, and impact of hate speech and online abuse in the online political landscape, developing 
-              strategies to mitigate harm and contributing to a nuanced understanding of digitally connected political discourse.</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ankitpatil3003/Analyzing-Political-Trends-on-Social-Media.git'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Home Automation through IOT using Cloud Services</h2>
-            <!-- <style>
-              p {
-                  text-align: justify;
-              }
-            </style>
-            <p class="description"> The Remote Light Bulb Automation System is a project designed to enable the remote control of light bulbs using a 
-              Microcontroller (Arduino UNO) and a web-based application hosted on Google App Engine. The system aims to provide a cost-effective, reliable, 
-              and scalable solution for automating tasks that involve physical or monotonous work.</p> -->
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/ankitpatil3003/Home-Automation-through-IOT-using-cloud-servies-.git'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        <!-- </div>
-        <div class="experience-details-container"> -->
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-4.png"
-                  alt="Project 4"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Image Captioning in Real Time</h2>
-              <!-- <style>
-                p {
-                    text-align: justify;
-                }
-              </style>
-              <p class="description"> Developed a major senior year capstone project on 'Image Captioning in Real Time' along with my three classmates. 
-                The idea was to develop a python-based program where images get captioned with the help of training Flicker8k Dataset using pre-trained 
-                CNN, LSTM and Xception Model.</p> -->
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/ankitpatil3003/Image-Processing.git'"
-                >
-                  Github
-                </button>
-              </div>
-            </div>
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="./assets/project-5.png"
-                  alt="Project 4"
-                  class="project-img"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Tuition Management System</h2>
-              <!-- <style>
-                p {
-                    text-align: justify;
-                }
-              </style>
-              <p class="description"> Won the 3rd prize for developing a web application, 'Tuition Management System' in a group of five.
-                Description - A site for an administrator where he/she will manage the data of their branches, teachers, and students of the tuition class. 
-                Languages used - HTML, CSS, and JS as the frontend and PHP and MySQL as the backend.</p> -->
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://github.com/ankitpatil3003/Tuition_Management_System.git'"
-                >
-                  Github
-                </button>
-              </div>
-            </div>
-          </div>
       </div>
       <img
         src="./assets/arrow.png"
@@ -570,6 +635,8 @@
         onclick="location.href='./#contact'"
       />
     </section>
+
+    <!-- CONTACT -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -592,19 +659,21 @@
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#courses">Courses</a></li>
+            <li><a href="#work-experience">Work</a></li>
+            <li><a href="#experience">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#courses">Courses</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Ankit Patil. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 Ankit Patil. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
