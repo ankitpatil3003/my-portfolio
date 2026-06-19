@@ -538,6 +538,17 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  width: auto;
+  min-width: 8rem;
+  white-space: nowrap;
+}
+
+.project-btn-2 {
+  color: white;
+  border-color: rgb(163, 163, 163);
+  width: auto;
+  min-width: 8rem;
+  white-space: nowrap;
 }
 
 .demo-video-link {
